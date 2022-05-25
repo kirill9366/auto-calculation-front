@@ -1,0 +1,166 @@
+extends base.pug
+
+block content
+  .wrapper
+    table(
+      class="table"
+    )
+      thead
+        tr.thead-dark
+          th(
+            scope="col"
+          ) №
+          th(
+            scope="col"
+          ) НАИМЕНОВАНИЕ РАБОТ
+          th(
+            scope="col"
+          ) ЕД. ИЗМ.
+          th(
+            scope="col"
+          ) КОЛ-ВО
+          th(
+            scope="col"
+          ) ЦЕНА, (₽)
+          th(
+            scope="col"
+          ) ∑, (₽)
+          th(
+            scope="col"
+          ) Кнопка
+      tbody
+        tr
+          th(
+            scope="row"
+          ) 1
+          td
+            input.table__input
+          td 
+            input.table__input(
+              value="Единица"
+            )
+          td 
+            input.table__input(
+              value="Кол"
+            )
+          td 
+            input.table__input(
+              value="Цена"
+            )
+          td 
+            input.table__input(
+              value="Всего"
+            )
+
+          td
+            button(
+              type="button"
+              class="btn btn-danger"
+            ) Удалить
+        tr
+          th(
+            scope="row"
+          ) #
+          td
+            input.table__input.border
+          td 
+            input.table__input.border
+          td 
+            input.table__input.border
+          td 
+            input.table__input.border
+          td 
+            input.table__input.border
+          td
+            button(
+              type="button"
+              class="btn btn-success"
+            ) Добавить
+  .wrapper
+    table(
+      class="table"
+    )
+      thead
+        tr.thead-dark
+          th(
+            scope="col"
+          ) №
+          th(
+            scope="col"
+          ) НАИМЕНОВАНИЕ МАТЕРИАЛОВ
+          th(
+            scope="col"
+          ) ЕД. ИЗМ.
+          th(
+            scope="col"
+          ) КОЛ-ВО
+          th(
+            scope="col"
+          ) ЦЕНА, (₽)
+          th(
+            scope="col"
+          ) ∑, (₽)
+          th(
+            scope="col"
+          ) Кнопка
+      tbody
+        tr
+          th(
+            scope="row"
+          ) 1
+          td
+            input.table__input(
+              value="Наименование"
+            )
+          td 
+            input.table__input(
+              value="Единица"
+            )
+          td 
+            input.table__input(
+              value="Кол"
+            )
+          td 
+            input.table__input(
+              value="Цена"
+            )
+          td 
+            input.table__input(
+              value="Всего"
+            )
+
+          td
+            button(
+              type="button"
+              class="btn btn-danger"
+            ) Удалить
+        tr
+          th(
+            scope="row"
+          ) #
+          td
+            input.table__input.border
+          td 
+            input.table__input.border
+          td 
+            input.table__input.border
+          td 
+            input.table__input.border
+          td 
+            input.table__input.border
+          td
+            button(
+              type="button"
+              class="btn btn-success"
+            ) Добавить
+  .d-flex.flex-row.wrapper
+    .p-2
+      button(
+        type="button"
+        class="btn btn-primary btn-lg"
+      ) Сгенерировать docx
+    .p-2
+      button(
+        type="button"
+        class="btn btn-primary btn-lg"
+      ) Сгенерировать docx
