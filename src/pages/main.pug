@@ -24,6 +24,9 @@ block content
           ) ЦЕНА, (₽)
           th(
             scope="col"
+          ) %
+          th(
+            scope="col"
           ) ∑, (₽)
           th(
             scope="col"
@@ -49,9 +52,28 @@ block content
             )
           td 
             input.table__input(
+              value="100"
+            )
+          td 
+            input.table__input(
               value="Всего"
             )
-
+          td
+            button(
+              type="button"
+              class="btn btn-danger"
+            ) Удалить
+        tr
+          th
+          td
+          td
+            input.table__input(
+              value="Подзаголовок"
+            )
+          td
+          td
+          td 
+          td 
           td
             button(
               type="button"
@@ -63,19 +85,31 @@ block content
           ) #
           td
             input.table__input.border
-          td 
+          td
             input.table__input.border
-          td 
+          td
             input.table__input.border
-          td 
+          td
             input.table__input.border
-          td 
+          td
+            input.table__input.border
+          td
             input.table__input.border
           td
             button(
               type="button"
               class="btn btn-success"
             ) Добавить
+        tr
+          th
+          td
+          td
+          td
+          td Всего
+          td
+            input.table__input.border
+          td 120
+
   .wrapper
     table(
       class="table"
@@ -97,6 +131,9 @@ block content
           th(
             scope="col"
           ) ЦЕНА, (₽)
+          th(
+            scope="col"
+          ) %
           th(
             scope="col"
           ) ∑, (₽)
@@ -126,9 +163,12 @@ block content
             )
           td 
             input.table__input(
+              value="100"
+            )
+          td 
+            input.table__input(
               value="Всего"
             )
-
           td
             button(
               type="button"
@@ -140,19 +180,31 @@ block content
           ) #
           td
             input.table__input.border
-          td 
+          td
             input.table__input.border
-          td 
+          td
             input.table__input.border
-          td 
+          td
             input.table__input.border
-          td 
+          td
+            input.table__input.border
+          td
             input.table__input.border
           td
             button(
               type="button"
               class="btn btn-success"
             ) Добавить
+        tr
+          th
+          td
+          td
+          td
+          td Всего
+          td
+            input.table__input.border
+          td 120
+
   .d-flex.flex-row.wrapper
     .p-2
       button(
@@ -163,4 +215,9 @@ block content
       button(
         type="button"
         class="btn btn-primary btn-lg"
-      ) Сгенерировать docx
+      ) Сгенерировать pdf
+    .p-2
+      button(
+        type="button"
+        class="btn btn-primary btn-lg"
+      ) Сгенерировать excel
